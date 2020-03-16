@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2019.1.1 (Build 612U)" ts="2020-03-16 11:14:27">
+<Class name="Crud.Messages.DeleteMsg">
+<Super>Ens.Request</Super>
+<TimeChanged>65444,54395.174402</TimeChanged>
+<TimeCreated>65444,54393.645695</TimeCreated>
+
+<Property name="IDNumber">
+<Type>%String</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>DeleteMsgDefaultData</DefaultData>
+<Data name="DeleteMsgDefaultData">
+<Structure>listnode</Structure>
+<Subscript>"DeleteMsg"</Subscript>
+<Value name="1">
+<Value>IDNumber</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Messages.DeleteResponse">
+<Super>Ens.Response</Super>
+<TimeChanged>65449,55320.97105</TimeChanged>
+<TimeCreated>65444,54447.399484</TimeCreated>
+
+<Property name="Status">
+<Type>%Boolean</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>DeleteResponseDefaultData</DefaultData>
+<Data name="DeleteResponseDefaultData">
+<Subscript>"DeleteResponse"</Subscript>
+<Value name="1">
+<Value>Status</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Messages.InsertMsg">
+<Super>Ens.Request</Super>
+<TimeChanged>65451,33080.362568</TimeChanged>
+<TimeCreated>65443,53356.467443</TimeCreated>
+
+<Property name="FirstName">
+<Type>%String</Type>
+</Property>
+
+<Property name="Surname">
+<Type>%String</Type>
+</Property>
+
+<Property name="IDNumber">
+<Type>%String</Type>
+</Property>
+
+<Property name="ContactNumber">
+<Type>%String</Type>
+</Property>
+
+<Property name="Gender">
+<Type>%String</Type>
+<Parameter name="DISPLAYLIST" value=",Male,Female"/>
+<Parameter name="VALUELIST" value=",Male,Female"/>
+</Property>
+
+<Property name="Member">
+<Type>%Boolean</Type>
+</Property>
+
+<Property name="DateOfBirth">
+<Type>%String</Type>
+</Property>
+
+<Property name="Dependents">
+<Type>%Integer</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>InsertMsgDefaultData</DefaultData>
+<Data name="InsertMsgDefaultData">
+<Subscript>"InsertMsg"</Subscript>
+<Value name="1">
+<Value>FirstName</Value>
+</Value>
+<Value name="2">
+<Value>Surname</Value>
+</Value>
+<Value name="3">
+<Value>IDNumber</Value>
+</Value>
+<Value name="4">
+<Value>ContactNumber</Value>
+</Value>
+<Value name="5">
+<Value>Gender</Value>
+</Value>
+<Value name="6">
+<Value>Member</Value>
+</Value>
+<Value name="7">
+<Value>DateOfBirth</Value>
+</Value>
+<Value name="8">
+<Value>Dependents</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Messages.InsertResponse">
+<Super>Ens.Response</Super>
+<TimeChanged>65449,55255.338487</TimeChanged>
+<TimeCreated>65443,53445.217889</TimeCreated>
+
+<Property name="Status">
+<Type>%Boolean</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>InsertResponseDefaultData</DefaultData>
+<Data name="InsertResponseDefaultData">
+<Subscript>"InsertResponse"</Subscript>
+<Value name="1">
+<Value>Status</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Messages.RetrieveMsg">
+<Super>Ens.Request</Super>
+<TimeChanged>65443,60768.008148</TimeChanged>
+<TimeCreated>65443,60714.475535</TimeCreated>
+
+<Property name="IDNumber">
+<Type>%String</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>RetrieveMsgDefaultData</DefaultData>
+<Data name="RetrieveMsgDefaultData">
+<Structure>listnode</Structure>
+<Subscript>"RetrieveMsg"</Subscript>
+<Value name="1">
+<Value>IDNumber</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Messages.RetrieveResponse">
+<Super>Ens.Response</Super>
+<TimeChanged>65449,51720.4374</TimeChanged>
+<TimeCreated>65443,57690.749565</TimeCreated>
+
+<Property name="FirstName">
+<Type>%String</Type>
+</Property>
+
+<Property name="Surname">
+<Type>%String</Type>
+</Property>
+
+<Property name="IDNumber">
+<Type>%String</Type>
+</Property>
+
+<Property name="ContactNumber">
+<Type>%String</Type>
+</Property>
+
+<Property name="Gender">
+<Type>%String</Type>
+</Property>
+
+<Property name="Member">
+<Type>%Boolean</Type>
+</Property>
+
+<Property name="DateOfBirth">
+<Type>%Date</Type>
+</Property>
+
+<Property name="Dependents">
+<Type>%Integer</Type>
+</Property>
+
+<Property name="Status">
+<Type>%Boolean</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>RetrieveResponseDefaultData</DefaultData>
+<Data name="RetrieveResponseDefaultData">
+<Subscript>"RetrieveResponse"</Subscript>
+<Value name="1">
+<Value>FirstName</Value>
+</Value>
+<Value name="2">
+<Value>Surname</Value>
+</Value>
+<Value name="3">
+<Value>IDNumber</Value>
+</Value>
+<Value name="4">
+<Value>ContactNumber</Value>
+</Value>
+<Value name="5">
+<Value>Gender</Value>
+</Value>
+<Value name="6">
+<Value>Member</Value>
+</Value>
+<Value name="7">
+<Value>DateOfBirth</Value>
+</Value>
+<Value name="8">
+<Value>Dependents</Value>
+</Value>
+<Value name="9">
+<Value>Status</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Messages.RetrieveResponse2">
+<Super>Ens.Response</Super>
+<TimeChanged>65449,34560.029191</TimeChanged>
+<TimeCreated>65449,34558.126035</TimeCreated>
+
+<Property name="errorResponse">
+<Type>%String</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>RetrieveResponse2DefaultData</DefaultData>
+<Data name="RetrieveResponse2DefaultData">
+<Structure>listnode</Structure>
+<Subscript>"RetrieveResponse2"</Subscript>
+<Value name="1">
+<Value>errorResponse</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Messages.UpdateMsg">
+<Super>Ens.Request</Super>
+<TimeChanged>65447,48435.166664</TimeChanged>
+<TimeCreated>65444,53730.610756</TimeCreated>
+
+<Property name="FirstName">
+<Type>%String</Type>
+</Property>
+
+<Property name="Surname">
+<Type>%String</Type>
+</Property>
+
+<Property name="ContactNumber">
+<Type>%String</Type>
+</Property>
+
+<Property name="IDNumber">
+<Type>%String</Type>
+</Property>
+
+<Property name="Member">
+<Type>%Boolean</Type>
+</Property>
+
+<Property name="Dependents">
+<Type>%Integer</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>UpdateMsgDefaultData</DefaultData>
+<Data name="UpdateMsgDefaultData">
+<Subscript>"UpdateMsg"</Subscript>
+<Value name="1">
+<Value>FirstName</Value>
+</Value>
+<Value name="2">
+<Value>Surname</Value>
+</Value>
+<Value name="3">
+<Value>IDNumber</Value>
+</Value>
+<Value name="4">
+<Value>Member</Value>
+</Value>
+<Value name="5">
+<Value>Dependents</Value>
+</Value>
+<Value name="6">
+<Value>ContactNumber</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Messages.UpdateResponse">
+<Super>Ens.Response</Super>
+<TimeChanged>65449,55408.498362</TimeChanged>
+<TimeCreated>65444,53823.108003</TimeCreated>
+
+<Property name="Status">
+<Type>%Boolean</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>UpdateResponseDefaultData</DefaultData>
+<Data name="UpdateResponseDefaultData">
+<Subscript>"UpdateResponse"</Subscript>
+<Value name="1">
+<Value>Status</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.MyProduction">
+<Super>Ens.Production</Super>
+<TimeChanged>65454,40335.697812</TimeChanged>
+<TimeCreated>65443,52161.716275</TimeCreated>
+
+<XData name="ProductionDefinition">
+<Data><![CDATA[
+<Production Name="Crud.MyProduction" TestingEnabled="true" LogGeneralTraceEvents="false">
+  <Description></Description>
+  <ActorPoolSize>2</ActorPoolSize>
+  <Item Name="Read" Category="" ClassName="Crud.Operations.Read" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  </Item>
+  <Item Name="Create" Category="" ClassName="Crud.Operations.Create" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  </Item>
+  <Item Name="Delete" Category="" ClassName="Crud.Operations.Delete" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  </Item>
+  <Item Name="Update" Category="" ClassName="Crud.Operations.Update" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  </Item>
+  <Item Name="CreateProcess" Category="" ClassName="Crud.Processes.Create" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  </Item>
+  <Item Name="ReadProcess" Category="" ClassName="Crud.Processes.Read" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  </Item>
+  <Item Name="UpdateProcess" Category="" ClassName="Crud.Processes.Update" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  </Item>
+  <Item Name="DeleteProcess" Category="" ClassName="Crud.Processes.Delete" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  </Item>
+</Production>
+]]></Data>
+</XData>
+</Class>
+
+
+<Class name="Crud.Operations.Create">
+<Super>Ens.BusinessOperation</Super>
+<TimeChanged>65454,34685.637208</TimeChanged>
+<TimeCreated>65444,49169.708177</TimeCreated>
+
+<Parameter name="INVOCATION">
+<Default>Queue</Default>
+</Parameter>
+
+<Method name="Create">
+<Description>
+Method that recieves a message with the information to populate Person Table</Description>
+<FormalSpec>pRequest:Crud.Messages.InsertMsg,*pResponse:Crud.Messages.InsertResponse</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+
+	set sc = $$$OK
+	set pResponse = ##class(Crud.Messages.InsertResponse).%New()
+
+	Try { 
+		set Val = ##class(Crud.Validators.Validate).%New()
+		
+		if (Val.CheckIDinBD(pRequest.IDNumber) = 0){
+			TStart 
+			set temp = ##class(Crud.Person).%New()
+
+			set temp.FirstName = pRequest.FirstName
+			set temp.Surname = pRequest.Surname
+			set temp.IDNumber = pRequest.IDNumber
+			set temp.ContactNumber = pRequest.ContactNumber
+			set temp.Gender = pRequest.Gender
+			set temp.Member = pRequest.Member
+			set temp.DateOfBirth = $ZDATEH(pRequest.DateOfBirth)
+			if pRequest.Dependents > -1{set temp.Dependents = pRequest.Dependents } 
+
+		$$$ThrowOnError(temp.%Save())
+		kill temp
+		TCommit 
+		set pResponse.Status = 1
+		}
+		else{set pResponse.Status = 0}
+
+	} Catch ex{
+		TROllback 1
+		set sc = ex.AsStatus()
+	}
+	
+	return sc
+]]></Implementation>
+</Method>
+
+<XData name="MessageMap">
+<Data><![CDATA[
+<MapItems>
+<MapItem MessageType="Crud.Messages.InsertMsg">
+<Method>Create</Method>
+</MapItem>
+</MapItems>
+]]></Data>
+</XData>
+</Class>
+
+
+<Class name="Crud.Operations.Delete">
+<Super>Ens.BusinessOperation</Super>
+<TimeChanged>65454,34685.840551</TimeChanged>
+<TimeCreated>65444,55407.085483</TimeCreated>
+
+<Parameter name="INVOCATION">
+<Default>Queue</Default>
+</Parameter>
+
+<Method name="Delete">
+<FormalSpec>pRequest:Crud.Messages.DeleteMsg,*pResponse:Crud.Messages.DeleteResponse</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	
+	set sc = $$$OK
+	set pResponse = ##class(Crud.Messages.DeleteResponse).%New()
+	Try{
+		set Val = ##class(Crud.Validators.Validate).%New()
+		
+		if (Val.CheckIDinBD(pRequest.IDNumber) = 1){
+			set sc =  ##class(Crud.Person).IDNumberIndexDelete(pRequest.IDNumber)
+			$$$ThrowOnError(sc)
+			set pResponse.Status = 1
+		}
+		else{set pResponse.Status = 0}
+		
+	}Catch ex{set sc = ex.AsStatus()}
+	
+	return sc
+]]></Implementation>
+</Method>
+
+<XData name="MessageMap">
+<Data><![CDATA[
+<MapItems>
+	<MapItem MessageType="Crud.Messages.DeleteMsg"> 
+		<Method>Delete</Method>
+	</MapItem>
+</MapItems>
+]]></Data>
+</XData>
+</Class>
+
+
+<Class name="Crud.Operations.Read">
+<Super>Ens.BusinessOperation</Super>
+<TimeChanged>65454,34685.999949</TimeChanged>
+<TimeCreated>65444,48464.460819</TimeCreated>
+
+<Parameter name="INVOCATION">
+<Default>Queue</Default>
+</Parameter>
+
+<Method name="Read">
+<Description>
+Retrieves from Person Table a specified user by IDNumber message Request</Description>
+<FormalSpec>pRequest:Crud.Messages.RetrieveMsg,*pResponse:Crud.Messages.RetrieveResponse</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set sc = $$$OK
+	
+	try{
+		set Val = ##class(Crud.Validators.Validate).%New()
+		set pResponse = ##class(Crud.Messages.RetrieveResponse).%New()
+		if (Val.CheckIDinBD(pRequest.IDNumber) = 1){
+			set person = ##class(Crud.Person).IDNumberIndexOpen(pRequest.IDNumber)
+			
+	
+			set sc = person.%ValidateObject()
+	
+			if sc = $$$OK{
+				set pResponse.FirstName = person.FirstName
+				set pResponse.Surname = person.Surname
+				set pResponse.IDNumber = person.IDNumber
+				set pResponse.ContactNumber = person.ContactNumber
+				set pResponse.Gender = person.Gender
+				set pResponse.Member = person.Member
+				set pResponse.DateOfBirth = person.DateOfBirth
+				set pResponse.Dependents = person.Dependents
+				set pResponse.Status = 1
+			}
+		}
+		else{set pResponse.Status = 0
+		}
+	}catch ex{
+		set sc = ex.AsStatus()
+	}
+	
+	return sc
+]]></Implementation>
+</Method>
+
+<XData name="MessageMap">
+<Data><![CDATA[
+<MapItems>
+<MapItem MessageType="Crud.Messages.RetrieveMsg">
+<Method>Read</Method>
+</MapItem>
+</MapItems>
+]]></Data>
+</XData>
+</Class>
+
+
+<Class name="Crud.Operations.Update">
+<Super>Ens.BusinessOperation</Super>
+<TimeChanged>65454,34686.153255</TimeChanged>
+<TimeCreated>65444,53891.25939</TimeCreated>
+
+<Parameter name="INVOCATION">
+<Default>Queue</Default>
+</Parameter>
+
+<Method name="Update">
+<FormalSpec>pRequest:Crud.Messages.UpdateMsg,*pResponse:Crud.Messages.UpdateResponse</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+
+	set sc = $$$OK
+	set pResponse = ##class(Crud.Messages.UpdateResponse).%New()
+	
+	Try{
+		set Val = ##class(Crud.Validators.Validate).%New()
+		
+		if (Val.CheckIDinBD(pRequest.IDNumber) = 1){
+			set person = ##class(Crud.Person).IDNumberIndexOpen(pRequest.IDNumber)
+		
+			set person.FirstName = pRequest.FirstName
+			set person.Surname = pRequest.Surname
+			set person.ContactNumber = pRequest.ContactNumber
+			set person.Member = pRequest.Member
+			if pRequest.Dependents >= 0 {set person.Dependents = pRequest.Dependents}
+		
+			$$$ThrowOnError(person.%Save())
+			set pResponse.Status = 1
+			kill person
+		}
+		else{set pResponse.Status = 0}
+	}catch ex{set sc = ex.AsStatus()}
+	
+	return sc
+]]></Implementation>
+</Method>
+
+<XData name="MessageMap">
+<Data><![CDATA[
+<MapItems>
+	<MapItem MessageType="Crud.Messages.UpdateMsg"> 
+		<Method>Update</Method>
+	</MapItem>
+</MapItems>
+]]></Data>
+</XData>
+</Class>
+
+
+<Class name="Crud.Person">
+<Super>%Persistent,%Populate</Super>
+<TimeChanged>65444,43573.035538</TimeChanged>
+<TimeCreated>65444,43571.093304</TimeCreated>
+
+<Property name="FirstName">
+<Type>%String</Type>
+<Required>1</Required>
+<Parameter name="MAXLEN"/>
+</Property>
+
+<Property name="Surname">
+<Type>%String</Type>
+<Required>1</Required>
+<Parameter name="MAXLEN"/>
+</Property>
+
+<Property name="ContactNumber">
+<Type>%String</Type>
+</Property>
+
+<Property name="IDNumber">
+<Type>%String</Type>
+<Required>1</Required>
+</Property>
+
+<Index name="IDNumberIndex">
+<Properties>IDNumber</Properties>
+<Unique>1</Unique>
+</Index>
+
+<Property name="Gender">
+<Type>%String</Type>
+<Parameter name="DISPLAYLIST" value=",Male,Female"/>
+<Parameter name="VALUELIST" value=",Male,Female"/>
+</Property>
+
+<Property name="Member">
+<Type>%Boolean</Type>
+<InitialExpression>0</InitialExpression>
+<Required>1</Required>
+</Property>
+
+<Property name="DateOfBirth">
+<Type>%Date</Type>
+</Property>
+
+<Property name="Dependents">
+<Type>%Integer</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DataLocation>^Crud.PersonD</DataLocation>
+<DefaultData>PersonDefaultData</DefaultData>
+<IdLocation>^Crud.PersonD</IdLocation>
+<IndexLocation>^Crud.PersonI</IndexLocation>
+<StreamLocation>^Crud.PersonS</StreamLocation>
+<Data name="PersonDefaultData">
+<Structure>listnode</Structure>
+<Subscript/>
+<Value name="1">
+<Value>%%CLASSNAME</Value>
+</Value>
+<Value name="2">
+<Value>FirstName</Value>
+</Value>
+<Value name="3">
+<Value>Surname</Value>
+</Value>
+<Value name="4">
+<Value>ContactNumber</Value>
+</Value>
+<Value name="5">
+<Value>IDNumber</Value>
+</Value>
+<Value name="6">
+<Value>Gender</Value>
+</Value>
+<Value name="7">
+<Value>Member</Value>
+</Value>
+<Value name="8">
+<Value>DateOfBirth</Value>
+</Value>
+<Value name="9">
+<Value>Dependents</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Create.Context">
+<Description>
+This class is generated by the Crud.Processes.Create BPL class.
+This class should not be edited or modified in any way.
+Do not make direct use of this class in your application.</Description>
+<ClassType>persistent</ClassType>
+<CompileAfter>Crud.Processes.Create</CompileAfter>
+<IncludeCode/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BP.Context</Super>
+<TimeChanged>65454,40330.537972</TimeChanged>
+<TimeCreated>65448,41163.060114</TimeCreated>
+<GeneratedBy>Ens.BPL.Compiler.CLS</GeneratedBy>
+
+<Property name="sc">
+<Type>%Boolean</Type>
+</Property>
+
+<Method name="OnResponse1">
+<Description>
+Response Handler for call to Create</Description>
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,request:Crud.Messages.InsertMsg,response:Crud.Messages.InsertResponse,callrequest:Crud.Messages.InsertMsg,callresponse:Crud.Messages.InsertResponse,callname:%String</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set status=$$$OK,response=callresponse
+ If $$$ISERR(status) Quit
+ } while (0)
+Exit Quit status
+Trap Set $ZT="",status=##class(Ens.Util.Error).EnsSystemError("Crud.Processes.Create.Thread1","OnResponse1")
+ Goto Exit
+]]></Implementation>
+</Method>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>ContextDefaultData1</DefaultData>
+<Data name="ContextDefaultData1">
+<Structure>listnode</Structure>
+<Subscript>"Context"</Subscript>
+<Value name="1">
+<Value>Status</Value>
+</Value>
+<Value name="2">
+<Value>sc</Value>
+</Value>
+<Value name="3">
+<Value>temp</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Create.Thread1">
+<Description>
+This class is generated by the Crud.Processes.Create BPL class.
+This class should not be edited or modified in any way.
+Do not make direct use of this class in your application.</Description>
+<ClassType>persistent</ClassType>
+<CompileAfter>Crud.Processes.Create</CompileAfter>
+<IncludeCode/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BP.Thread</Super>
+<TimeChanged>65454,40331.266103</TimeChanged>
+<TimeCreated>65454,40330.519429</TimeCreated>
+<GeneratedBy>Ens.BPL.Compiler.CLS</GeneratedBy>
+
+<Method name="S1">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Do {
+ set context.sc = ##class(Crud.Validators.Validate).ValidateID(request.IDNumber)
+ } while (0)
+ If $$$ISERR(status) Quit
+ If (context.sc=0) {
+ Set ..%NextState="S3"
+ } else {
+ Set ..%NextState="S12"
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S1") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S10">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set status=$$$OK,response.Status=context.sc
+ If $$$ISERR(status) Quit
+ Set ..%NextState="S6"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S10") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S11">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set status=$$$OK,response.Status=context.sc
+ If $$$ISERR(status) Quit
+ Set ..%NextState="S4"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S11") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S12">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set status=$$$OK,response.Status=context.sc
+ If $$$ISERR(status) Quit
+ Set ..%NextState="S2"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S12") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S2">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Do process.ClearAllPendingResponses()
+ Set ..%NextState="Stop"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S2") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S3">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Do {
+ set context.sc = ##class(Crud.Validators.Validate).ValidateDOB(request.DateOfBirth, request.IDNumber)
+ } while (0)
+ If $$$ISERR(status) Quit
+ If (context.sc = 0) {
+ Set ..%NextState="S5"
+ } else {
+ Set ..%NextState="S11"
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S3") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S4">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set ..%NextState="S2"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S4") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S5">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Do {
+ set context.sc = ##class(Crud.Validators.Validate).CheckContactNumber(request.ContactNumber)
+ } while (0)
+ If $$$ISERR(status) Quit
+ If (context.sc=1) {
+ Set ..%NextState="S7"
+ } else {
+ Set ..%NextState="S10"
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S5") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S6">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set ..%NextState="S4"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S6") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S7">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ #; --- Begin Call Call Insert ---
+ #; --- Begin Request ---
+ Set callrequest=##class(Crud.Messages.InsertMsg).%New()
+ If '$IsObject(callrequest) Set status=%objlasterror Quit
+ Set status=$$$OK,callrequest=request
+ If $$$ISERR(status) Quit
+ Set status=..MakeAsyncCall("OnResponse1","Create",callrequest,"Call Insert",1,0,"Call Insert",1)
+ If $$$ISERR(status) Quit
+ Kill callrequest
+ #; --- End Request ---
+ #; --- End Call Call Insert ---
+ Do ..%PendingResponses.Clear(),..%SyncResponses.Clear()
+ Set ..%SyncTimedOut=0,..%PendingTimeout="",..%PendingAlarmHandle="",..%SyncName=""
+ If ..%Process.IsResponsePending("Call Insert") Do ..%PendingResponses.SetAt("","Call Insert")
+ If ..%PendingResponses.Count()>0 {
+    Set %name="",%alarmhandle=""
+    Set status=..%Process.MakeTimerCall("_Timeout",.%name,3,"Call Insert",.%alarmhandle,"")
+    If $$$ISERR(status) Quit
+    Do ..%PendingResponses.SetAt("",%name) Set ..%PendingTimeout=%name,..%PendingAlarmHandle=%alarmhandle,..%SyncName=""
+ }
+ If ..%PendingResponses.Count()=0 {
+    Set ..%NextState="S9"
+ } else {
+    Set ..%NextState="S8",..%Wait=1
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S7") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S8">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ If ..%PendingResponses.Count()=0 {
+    Set ..%NextState="S9"
+ } else {
+    Set ..%NextState="S8",..%Wait=1
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S8") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S9">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set ..%NextState="S6"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S9") Goto Exit
+]]></Implementation>
+</Method>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Create">
+<Description>
+</Description>
+<ClassType>persistent</ClassType>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BusinessProcessBPL</Super>
+<TimeChanged>65454,40330.363241</TimeChanged>
+<TimeCreated>65448,40692.829243</TimeCreated>
+
+<XData name="BPL">
+<Description>
+BPL Definition</Description>
+<XMLNamespace>http://www.intersystems.com/bpl</XMLNamespace>
+<Data><![CDATA[
+<process language='objectscript' request='Crud.Messages.InsertMsg' response='Crud.Messages.InsertResponse' height='2000' width='2000' >
+<context>
+<property name='sc' type='%Boolean' instantiate='0' />
+</context>
+<sequence xend='200' yend='1400' >
+<code name='Check The ID' xpos='200' ypos='250' >
+<![CDATA[ set context.sc = ##class(Crud.Validators.Validate).ValidateID(request.IDNumber)]]]]><![CDATA[>
+</code>
+<if name='Validate ID' condition='context.sc=0' xpos='200' ypos='350' xend='200' yend='1300' >
+<true>
+<code name='Check Date of Birth' xpos='470' ypos='500' >
+<![CDATA[ set context.sc = ##class(Crud.Validators.Validate).ValidateDOB(request.DateOfBirth, request.IDNumber)]]]]><![CDATA[>
+</code>
+<if name='Validate DOB' condition='context.sc = 0' xpos='470' ypos='600' xend='470' yend='1200' >
+<true>
+<code name='Check Contact Number' xpos='740' ypos='750' >
+<![CDATA[ set context.sc = ##class(Crud.Validators.Validate).CheckContactNumber(request.ContactNumber)]]]]><![CDATA[>
+</code>
+<if name='Validate ContactNo.' condition='context.sc=1' xpos='740' ypos='850' xend='740' yend='1100' >
+<true>
+<call name='Call Insert' target='Create' async='0' timeout='3' xpos='1010' ypos='1000' >
+<request type='Crud.Messages.InsertMsg' >
+<assign property="callrequest" value="request" action="set" />
+</request>
+<response type='Crud.Messages.InsertResponse' >
+<assign property="response" value="callresponse" action="set" />
+</response>
+</call>
+</true>
+<false>
+<assign name="Invalid Contact" property="response.Status" value="context.sc" action="set" xpos='740' ypos='1000' />
+</false>
+</if>
+</true>
+<false>
+<assign name="Invalid DOB" property="response.Status" value="context.sc" action="set" xpos='470' ypos='750' />
+</false>
+</if>
+</true>
+<false>
+<assign name="Invalid ID" property="response.Status" value="context.sc" action="set" xpos='200' ypos='500' />
+</false>
+</if>
+</sequence>
+</process>
+]]></Data>
+</XData>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Delete.Context">
+<Description>
+This class is generated by the Crud.Processes.Delete BPL class.
+This class should not be edited or modified in any way.
+Do not make direct use of this class in your application.</Description>
+<ClassType>persistent</ClassType>
+<CompileAfter>Crud.Processes.Delete</CompileAfter>
+<IncludeCode/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BP.Context</Super>
+<TimeChanged>65454,36536.74525</TimeChanged>
+<TimeCreated>65448,42932.140232</TimeCreated>
+<GeneratedBy>Ens.BPL.Compiler.CLS</GeneratedBy>
+
+<Property name="sc">
+<Type>%Boolean</Type>
+</Property>
+
+<Method name="OnResponse1">
+<Description>
+Response Handler for call to Delete</Description>
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,request:Crud.Messages.DeleteMsg,response:Crud.Messages.DeleteResponse,callrequest:Crud.Messages.DeleteMsg,callresponse:Crud.Messages.DeleteResponse,callname:%String</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set status=$$$OK,response=callresponse
+ If $$$ISERR(status) Quit
+ } while (0)
+Exit Quit status
+Trap Set $ZT="",status=##class(Ens.Util.Error).EnsSystemError("Crud.Processes.Delete.Thread1","OnResponse1")
+ Goto Exit
+]]></Implementation>
+</Method>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>ContextDefaultData1</DefaultData>
+<Data name="ContextDefaultData1">
+<Structure>listnode</Structure>
+<Subscript>"Context"</Subscript>
+<Value name="1">
+<Value>sc</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Delete.Thread1">
+<Description>
+This class is generated by the Crud.Processes.Delete BPL class.
+This class should not be edited or modified in any way.
+Do not make direct use of this class in your application.</Description>
+<ClassType>persistent</ClassType>
+<CompileAfter>Crud.Processes.Delete</CompileAfter>
+<IncludeCode/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BP.Thread</Super>
+<TimeChanged>65454,36536.814695</TimeChanged>
+<TimeCreated>65454,36535.926108</TimeCreated>
+<GeneratedBy>Ens.BPL.Compiler.CLS</GeneratedBy>
+
+<Method name="S1">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Do {
+ set context.sc = ##class(Crud.Validators.Validate).ValidateID(request.IDNumber)
+ } while (0)
+ If $$$ISERR(status) Quit
+ If (context.sc=1) {
+ Set ..%NextState="S3"
+ } else {
+ Set ..%NextState="S6"
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S1") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S2">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Do process.ClearAllPendingResponses()
+ Set ..%NextState="Stop"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S2") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S3">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ #; --- Begin Call call Delete ---
+ #; --- Begin Request ---
+ Set callrequest=##class(Crud.Messages.DeleteMsg).%New()
+ If '$IsObject(callrequest) Set status=%objlasterror Quit
+ Set status=$$$OK,callrequest=request
+ If $$$ISERR(status) Quit
+ Set status=..MakeAsyncCall("OnResponse1","Delete",callrequest,"call Delete",1,0,"call Delete",1)
+ If $$$ISERR(status) Quit
+ Kill callrequest
+ #; --- End Request ---
+ #; --- End Call call Delete ---
+ Do ..%PendingResponses.Clear(),..%SyncResponses.Clear()
+ Set ..%SyncTimedOut=0,..%PendingTimeout="",..%PendingAlarmHandle="",..%SyncName=""
+ If ..%Process.IsResponsePending("call Delete") Do ..%PendingResponses.SetAt("","call Delete")
+ If ..%PendingResponses.Count()>0 {
+    Set %name="",%alarmhandle=""
+    Set status=..%Process.MakeTimerCall("_Timeout",.%name,3,"call Delete",.%alarmhandle,"")
+    If $$$ISERR(status) Quit
+    Do ..%PendingResponses.SetAt("",%name) Set ..%PendingTimeout=%name,..%PendingAlarmHandle=%alarmhandle,..%SyncName=""
+ }
+ If ..%PendingResponses.Count()=0 {
+    Set ..%NextState="S5"
+ } else {
+    Set ..%NextState="S4",..%Wait=1
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S3") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S4">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ If ..%PendingResponses.Count()=0 {
+    Set ..%NextState="S5"
+ } else {
+    Set ..%NextState="S4",..%Wait=1
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S4") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S5">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set ..%NextState="S2"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S5") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S6">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set status=$$$OK,response.Status=context.sc
+ If $$$ISERR(status) Quit
+ Set ..%NextState="S2"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S6") Goto Exit
+]]></Implementation>
+</Method>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Delete">
+<Description>
+</Description>
+<ClassType>persistent</ClassType>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BusinessProcessBPL</Super>
+<TimeChanged>65454,37002.239476</TimeChanged>
+<TimeCreated>65448,42902.524836</TimeCreated>
+
+<XData name="BPL">
+<Description>
+BPL Definition</Description>
+<XMLNamespace>http://www.intersystems.com/bpl</XMLNamespace>
+<Data><![CDATA[
+<process language='objectscript' request='Crud.Messages.DeleteMsg' response='Crud.Messages.DeleteResponse' height='2000' width='2000' >
+<context>
+<property name='sc' type='%Boolean' instantiate='0' />
+</context>
+<sequence xend='200' yend='700' >
+<code name='Check ID' xpos='200' ypos='250' >
+<![CDATA[ set context.sc = ##class(Crud.Validators.Validate).ValidateID(request.IDNumber)]]]]><![CDATA[>
+</code>
+<if name='Validate ID' condition='context.sc=1' xpos='200' ypos='350' xend='200' yend='600' >
+<true>
+<call name='call Delete' target='Delete' async='0' timeout='3' xpos='470' ypos='500' >
+<request type='Crud.Messages.DeleteMsg' >
+<assign property="callrequest" value="request" action="set" />
+</request>
+<response type='Crud.Messages.DeleteResponse' >
+<assign property="response" value="callresponse" action="set" />
+</response>
+</call>
+</true>
+<false>
+<assign name="Unavailable ID" property="response.Status" value="context.sc" action="set" xpos='200' ypos='500' />
+</false>
+</if>
+</sequence>
+</process>
+]]></Data>
+</XData>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Read.Context">
+<Description>
+This class is generated by the Crud.Processes.Read BPL class.
+This class should not be edited or modified in any way.
+Do not make direct use of this class in your application.</Description>
+<ClassType>persistent</ClassType>
+<CompileAfter>Crud.Processes.Read</CompileAfter>
+<IncludeCode/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BP.Context</Super>
+<TimeChanged>65454,37372.880849</TimeChanged>
+<TimeCreated>65448,41664.621307</TimeCreated>
+<GeneratedBy>Ens.BPL.Compiler.CLS</GeneratedBy>
+
+<Property name="sc">
+<Type>%Boolean</Type>
+</Property>
+
+<Method name="OnResponse1">
+<Description>
+Response Handler for call to Read</Description>
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,request:Crud.Messages.RetrieveMsg,response:Crud.Messages.RetrieveResponse,callrequest:Crud.Messages.RetrieveMsg,callresponse:Crud.Messages.RetrieveResponse,callname:%String</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set status=$$$OK,response=callresponse
+ If $$$ISERR(status) Quit
+ } while (0)
+Exit Quit status
+Trap Set $ZT="",status=##class(Ens.Util.Error).EnsSystemError("Crud.Processes.Read.Thread1","OnResponse1")
+ Goto Exit
+]]></Implementation>
+</Method>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+<DefaultData>ContextDefaultData1</DefaultData>
+<Data name="ContextDefaultData1">
+<Structure>listnode</Structure>
+<Subscript>"Context"</Subscript>
+<Value name="1">
+<Value>Err</Value>
+</Value>
+<Value name="2">
+<Value>Status</Value>
+</Value>
+<Value name="3">
+<Value>sc</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Read.Thread1">
+<Description>
+This class is generated by the Crud.Processes.Read BPL class.
+This class should not be edited or modified in any way.
+Do not make direct use of this class in your application.</Description>
+<ClassType>persistent</ClassType>
+<CompileAfter>Crud.Processes.Read</CompileAfter>
+<IncludeCode/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BP.Thread</Super>
+<TimeChanged>65454,37373.616018</TimeChanged>
+<TimeCreated>65454,37372.864444</TimeCreated>
+<GeneratedBy>Ens.BPL.Compiler.CLS</GeneratedBy>
+
+<Method name="S1">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Do {
+ set context.sc = ##class(Crud.Validators.Validate).CheckIDinBD(request.IDNumber)
+ } while (0)
+ If $$$ISERR(status) Quit
+ If (context.sc = 1) {
+ Set ..%NextState="S3"
+ } else {
+ Set ..%NextState="S6"
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S1") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S2">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Do process.ClearAllPendingResponses()
+ Set ..%NextState="Stop"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S2") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S3">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ #; --- Begin Call Read by ID ---
+ #; --- Begin Request ---
+ Set callrequest=##class(Crud.Messages.RetrieveMsg).%New()
+ If '$IsObject(callrequest) Set status=%objlasterror Quit
+ Set status=$$$OK,callrequest=request
+ If $$$ISERR(status) Quit
+ Set status=..MakeAsyncCall("OnResponse1","Read",callrequest,"Read by ID",1,0,"Read by ID",1)
+ If $$$ISERR(status) Quit
+ Kill callrequest
+ #; --- End Request ---
+ #; --- End Call Read by ID ---
+ Do ..%PendingResponses.Clear(),..%SyncResponses.Clear()
+ Set ..%SyncTimedOut=0,..%PendingTimeout="",..%PendingAlarmHandle="",..%SyncName=""
+ If ..%Process.IsResponsePending("Read by ID") Do ..%PendingResponses.SetAt("","Read by ID")
+ If ..%PendingResponses.Count()>0 {
+    Set %name="",%alarmhandle=""
+    Set status=..%Process.MakeTimerCall("_Timeout",.%name,3,"Read by ID",.%alarmhandle,"")
+    If $$$ISERR(status) Quit
+    Do ..%PendingResponses.SetAt("",%name) Set ..%PendingTimeout=%name,..%PendingAlarmHandle=%alarmhandle,..%SyncName=""
+ }
+ If ..%PendingResponses.Count()=0 {
+    Set ..%NextState="S5"
+ } else {
+    Set ..%NextState="S4",..%Wait=1
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S3") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S4">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ If ..%PendingResponses.Count()=0 {
+    Set ..%NextState="S5"
+ } else {
+    Set ..%NextState="S4",..%Wait=1
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S4") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S5">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set ..%NextState="S2"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S5") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S6">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set status=$$$OK,response.Status=context.sc
+ If $$$ISERR(status) Quit
+ Set ..%NextState="S2"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S6") Goto Exit
+]]></Implementation>
+</Method>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Read">
+<Description>
+</Description>
+<ClassType>persistent</ClassType>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BusinessProcessBPL</Super>
+<TimeChanged>65454,37372.708486</TimeChanged>
+<TimeCreated>65448,41664.422441</TimeCreated>
+
+<XData name="BPL">
+<Description>
+BPL Definition</Description>
+<XMLNamespace>http://www.intersystems.com/bpl</XMLNamespace>
+<Data><![CDATA[
+<process language='objectscript' request='Crud.Messages.RetrieveMsg' response='Crud.Messages.RetrieveResponse' height='2000' width='2000' >
+<context>
+<property name='sc' type='%Boolean' instantiate='0' />
+</context>
+<sequence xend='200' yend='700' >
+<code name='check if id is present' xpos='200' ypos='250' >
+<![CDATA[ set context.sc = ##class(Crud.Validators.Validate).CheckIDinBD(request.IDNumber)]]]]><![CDATA[>
+</code>
+<if name='Validate ID' condition='context.sc = 1' xpos='200' ypos='350' xend='200' yend='600' >
+<true>
+<call name='Read by ID' target='Read' async='0' timeout='3' xpos='470' ypos='500' >
+<request type='Crud.Messages.RetrieveMsg' >
+<assign property="callrequest" value="request" action="set" />
+</request>
+<response type='Crud.Messages.RetrieveResponse' >
+<assign property="response" value="callresponse" action="set" />
+</response>
+</call>
+</true>
+<false>
+<assign name="Unavalable ID" property="response.Status" value="context.sc" action="set" xpos='200' ypos='500' />
+</false>
+</if>
+</sequence>
+</process>
+]]></Data>
+</XData>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Update.Context">
+<Description>
+This class is generated by the Crud.Processes.Update BPL class.
+This class should not be edited or modified in any way.
+Do not make direct use of this class in your application.</Description>
+<ClassType>persistent</ClassType>
+<CompileAfter>Crud.Processes.Update</CompileAfter>
+<IncludeCode/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BP.Context</Super>
+<TimeChanged>65448,42673.258474</TimeChanged>
+<TimeCreated>65448,42388.634226</TimeCreated>
+<GeneratedBy>Ens.BPL.Compiler.CLS</GeneratedBy>
+
+<Method name="OnResponse1">
+<Description>
+Response Handler for call to Update</Description>
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,request:Crud.Messages.UpdateMsg,response:Crud.Messages.UpdateResponse,callrequest:Crud.Messages.UpdateMsg,callresponse:Crud.Messages.UpdateResponse,callname:%String</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Set status=$$$OK,response=callresponse
+ If $$$ISERR(status) Quit
+ } while (0)
+Exit Quit status
+Trap Set $ZT="",status=##class(Ens.Util.Error).EnsSystemError("Crud.Processes.Update.Thread1","OnResponse1")
+ Goto Exit
+]]></Implementation>
+</Method>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Update.Thread1">
+<Description>
+This class is generated by the Crud.Processes.Update BPL class.
+This class should not be edited or modified in any way.
+Do not make direct use of this class in your application.</Description>
+<ClassType>persistent</ClassType>
+<CompileAfter>Crud.Processes.Update</CompileAfter>
+<IncludeCode/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BP.Thread</Super>
+<TimeChanged>65448,42674.01257</TimeChanged>
+<TimeCreated>65448,42673.243058</TimeCreated>
+<GeneratedBy>Ens.BPL.Compiler.CLS</GeneratedBy>
+
+<Method name="S1">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ #; --- Begin Call Call Update ---
+ #; --- Begin Request ---
+ Set callrequest=##class(Crud.Messages.UpdateMsg).%New()
+ If '$IsObject(callrequest) Set status=%objlasterror Quit
+ Set status=$$$OK,callrequest=request
+ If $$$ISERR(status) Quit
+ Set status=..MakeAsyncCall("OnResponse1","Update",callrequest,"Call Update",1,0,"Call Update",1)
+ If $$$ISERR(status) Quit
+ Kill callrequest
+ #; --- End Request ---
+ #; --- End Call Call Update ---
+ Do ..%PendingResponses.Clear(),..%SyncResponses.Clear()
+ Set ..%SyncTimedOut=0,..%PendingTimeout="",..%PendingAlarmHandle="",..%SyncName=""
+ If ..%Process.IsResponsePending("Call Update") Do ..%PendingResponses.SetAt("","Call Update")
+ If ..%PendingResponses.Count()>0 {
+    Set %name="",%alarmhandle=""
+    Set status=..%Process.MakeTimerCall("_Timeout",.%name,3,"Call Update",.%alarmhandle,"")
+    If $$$ISERR(status) Quit
+    Do ..%PendingResponses.SetAt("",%name) Set ..%PendingTimeout=%name,..%PendingAlarmHandle=%alarmhandle,..%SyncName=""
+ }
+ If ..%PendingResponses.Count()=0 {
+    Set ..%NextState="S3"
+ } else {
+    Set ..%NextState="S2",..%Wait=1
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S1") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S2">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ If ..%PendingResponses.Count()=0 {
+    Set ..%NextState="S3"
+ } else {
+    Set ..%NextState="S2",..%Wait=1
+ }
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S2") Goto Exit
+]]></Implementation>
+</Method>
+
+<Method name="S3">
+<FormalSpec>process:Ens.BusinessProcess,context:Ens.BP.Context,synctimedout:%Boolean,syncresponses:%ArrayOfObjects(ELEMENTTYPE="%Library.Persistent"),request:%Library.Persistent,response:%Library.Persistent</FormalSpec>
+<Language>objectscript</Language>
+<PublicList>process,context</PublicList>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+ Set $ZT="Trap",status=$$$OK do {
+ Do process.ClearAllPendingResponses()
+ Set ..%NextState="Stop"
+ } while (0)
+Exit Quit ..ManageState(status)
+Trap Set $ZT="",status=..ManageStatus(status,"S3") Goto Exit
+]]></Implementation>
+</Method>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Processes.Update">
+<Description>
+</Description>
+<ClassType>persistent</ClassType>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>Ens.BusinessProcessBPL</Super>
+<TimeChanged>65448,42499.836042</TimeChanged>
+<TimeCreated>65448,42387.484218</TimeCreated>
+
+<XData name="BPL">
+<Description>
+BPL Definition</Description>
+<XMLNamespace>http://www.intersystems.com/bpl</XMLNamespace>
+<Data><![CDATA[
+<process language='objectscript' request='Crud.Messages.UpdateMsg' response='Crud.Messages.UpdateResponse' height='2000' width='2000' >
+<sequence xend='200' yend='350' >
+<call name='Call Update' target='Update' async='0' timeout='3' xpos='200' ypos='250' >
+<request type='Crud.Messages.UpdateMsg' >
+<assign property="callrequest" value="request" action="set" />
+</request>
+<response type='Crud.Messages.UpdateResponse' >
+<assign property="response" value="callresponse" action="set" />
+</response>
+</call>
+</sequence>
+</process>
+]]></Data>
+</XData>
+
+<Storage name="Default">
+<Type>%Storage.Persistent</Type>
+</Storage>
+</Class>
+
+
+<Class name="Crud.Validators.Validate">
+<Super>%RegisteredObject</Super>
+<TimeChanged>65454,34277.034628</TimeChanged>
+<TimeCreated>65447,54493.059268</TimeCreated>
+
+<Method name="ValidateID">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>ID:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	if ($LENGTH(ID) = 13){
+		set i = 1
+		set res1 = 0
+		set res2 = ""
+		while(i < 13)
+		{
+			set res1 = res1 + $Extract(ID, i, i)
+			set i = i + 1
+			
+			set res2 = res2 _$Extract(ID, i, i)
+			set i = i + 1
+		}
+		set res2 = res2 * 2
+		set i = 1
+		set res3 = 0
+		set length = $LENGTH(res2)
+		while(i <= length)
+		{
+			set res3 = res3 + $Extract(res2, i)
+			set i = i + 1	
+		}
+		set res4 = res1 + res3
+		set result = 10 - $Extract(res4, 2)
+		
+		if result = $Extract(ID, 13)
+		{
+			w 1
+			Return 1
+		}
+	}
+	w 0
+	Return 0
+]]></Implementation>
+</Method>
+
+<Method name="ValidateDOB">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>DOB:%String,ID:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	if (($PIECE(DOB, "/", 1) = $EXTRACT(ID, 3,4)) &&
+		($PIECE(DOB, "/", 2) = $EXTRACT(ID, 5,6)) &&
+		($EXTRACT($PIECE(DOB, "/", 3),3,4) = $EXTRACT(ID, 1,2)))
+	{
+		return 1		
+	}
+	else{return 0}
+	quit 1
+]]></Implementation>
+</Method>
+
+<Method name="ValidateGender">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>sex,ID</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set sc = $$$OK
+	
+	set sexNumber = $EXTRACT(ID, 7)
+	
+	if (sex = "Male"){
+		if sexNumber > 4{w "Man"}
+		else{w "Invalid Gender"}
+	}
+	elseif sex = "Female"{
+		if sexNumber < 5{w "woman"}
+		else{w "Invalid gender"}
+	}
+	else{w "invalid"}
+	quit 1
+]]></Implementation>
+</Method>
+
+<Method name="CheckIDinBD">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>id</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set sc = $$$OK
+	try{
+		set sql = "SELECT * FROM Crud.Person WHERE (IDNumber = ?)"
+		set statement = ##class(%SQL.Statement).%New()
+		set status = statement.%Prepare(sql)
+		if $$$ISOK(status){set rs = statement.%Execute(id)
+			if (rs.%SQLCode >= 0){if rs.%Next(){ RETURN 1} }
+		}
+	}catch ex{
+		set sc = ex.AsStatus()
+		return sc
+		
+	}
+	return 0
+]]></Implementation>
+</Method>
+
+<Method name="CheckContactNumber">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>contact</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set sc = $$$OK
+	
+	Try{
+		if ($ISVALIDNUM(contact) '= 1) || ($EXTRACT(contact, 1) '= 0) || ($LENGTH(contact) '= 10){
+			set sc = 0
+			}
+	} Catch ex {
+		set sc = ex.AsStatus()
+	}
+	return sc
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Package name="Crud" sqlname="Crud"/>
+</Export>
